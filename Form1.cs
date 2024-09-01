@@ -17,7 +17,9 @@ namespace WindowsFormsApp1
         public FFmpegotron()
         {
             InitializeComponent();
-            this.Text = "FFmpeg-ilizer";
+            this.Text = "FFmpegotron";
+            downloadDependancies();
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -79,6 +81,16 @@ namespace WindowsFormsApp1
 
         }
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        async void downloadDependancies()
+        {
+            await YoutubeDLSharp.Utils.DownloadYtDlp();
+            await YoutubeDLSharp.Utils.DownloadFFmpeg();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }
