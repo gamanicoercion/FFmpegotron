@@ -37,7 +37,6 @@ namespace WindowsFormsApp1
 
                 proc1.WorkingDirectory = path;
                 proc1.FileName = "cmd.exe";
-                //proc1.Verb = "runas";
                 proc1.Arguments = "/c " + $@"ffmpeg -i ""{filename}"" {path}/{chosenName}.{formatChosen}";
                 proc1.WindowStyle = ProcessWindowStyle.Hidden;
                 Process.Start(proc1);
