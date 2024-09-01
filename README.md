@@ -1,3 +1,2 @@
 goofy ahhh ffmpeg that isn't in a CLI
-# Dependancies:
-[ffmpeg](https://ffmpeg.org/)
+Put the executable in a folder of it's own, as it downloads ffmpeg and yt-dlp executables automatically.
