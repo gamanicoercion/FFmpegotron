@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
                 var proc1 = new ProcessStartInfo();
                 proc1.UseShellExecute = true;
 
-                proc1.WorkingDirectory = path;
+                //proc1.WorkingDirectory = path; 
                 proc1.FileName = "cmd.exe";
                 proc1.Arguments = "/c " + $@"ffmpeg -i ""{path}\\{openFileDialog1.SafeFileName}"" {path}/{chosenName}.{formatChosen}"; //TODO: make it run in the same folder as the executable
                 proc1.WindowStyle = ProcessWindowStyle.Hidden;
