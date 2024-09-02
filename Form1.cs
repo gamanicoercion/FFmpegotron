@@ -28,7 +28,8 @@ namespace WindowsFormsApp1
             string filename = openFileDialog1.FileName;
             string chosenName = textBox1.Text;
             string path = System.IO.Path.GetDirectoryName(filename);
-            if (formatChosen != "" && path.Length > 3 && filename.Length > 3)
+
+            if (formatChosen != "" && filename.Length > 1) // && path.Length > 1
             {
                 if (chosenName == "")
                 {
@@ -39,7 +40,7 @@ namespace WindowsFormsApp1
 
                 proc1.WorkingDirectory = path;
                 proc1.FileName = "cmd.exe";
-                proc1.Arguments = "/c " + $@"ffmpeg -i ""{filename}"" {path}/{chosenName}.{formatChosen}";
+                proc1.Arguments = "/c " + $@"ffmpeg -i ""{path}\\{openFileDialog1.SafeFileName}"" {path}/{chosenName}.{formatChosen}"; //TODO: make it run in the same folder as the executable
                 proc1.WindowStyle = ProcessWindowStyle.Hidden;
                 Process.Start(proc1);
             }
@@ -52,7 +53,7 @@ namespace WindowsFormsApp1
 
         public void button2_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Media File|*.mp4|*.mp3|*.wav|*.mkv|*.mov";
+            openFileDialog1.Filter = "Media Files|*.mp4;*.mp3;*.wav;*.mkv;*.mov";
             openFileDialog1.InitialDirectory = "";
             openFileDialog1.Title = "Choose a media file!";
             openFileDialog1.ShowDialog();
@@ -137,7 +138,21 @@ namespace WindowsFormsApp1
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             string format = comboBox3.GetItemText(comboBox3.SelectedItem);
-
+            var formats = new List<string> { "mkv", "mov", "mp4", "avi" };
+            foreach (var frmt in formats) {
+                if (frmt == format)
+                {
+                    comboBox2.Enabled = true;
+                    comboBox2.Visible = true;
+                    label8.Visible = true;
+                }
+                else
+                {
+                    comboBox2.Visible = false;
+                    comboBox2.Enabled = false;
+                    label8.Visible = false;
+                }
+            }
 
         }
     }
