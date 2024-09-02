@@ -56,7 +56,7 @@
     <ApplicationIcon>ffmpeg.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>69D82AB00FB5C8FC55FD91C609DA85B44F85C8A6</ManifestCertificateThumbprint>

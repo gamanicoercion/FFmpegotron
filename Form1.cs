@@ -20,6 +20,7 @@ namespace WindowsFormsApp1
             this.Text = "FFmpegotron";
             downloadDependancies();
 
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -34,7 +35,6 @@ namespace WindowsFormsApp1
                     chosenName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
                 }
                 var proc1 = new ProcessStartInfo();
-                string anyCommand;
                 proc1.UseShellExecute = true;
 
                 proc1.WorkingDirectory = path;
@@ -46,7 +46,7 @@ namespace WindowsFormsApp1
             else
             {
                 MessageBox.Show("Please fill out the required fields!", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error); 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -56,9 +56,17 @@ namespace WindowsFormsApp1
             openFileDialog1.InitialDirectory = "";
             openFileDialog1.Title = "Choose a media file!";
             openFileDialog1.ShowDialog();
-            string filename = $"Chosen File: {openFileDialog1.FileName}";
-            label1.Text = filename;
-            Console.WriteLine(filename);
+            string filename = string.Empty;
+            string file_path = string.Empty;
+            if (openFileDialog1.FileName != "openFileDialog1")
+            {
+                filename = $"Chosen File: {openFileDialog1.SafeFileName}";
+                file_path = $"Path: {openFileDialog1.FileName}";
+                label1.Text = filename;
+                label6.Text = file_path;
+                button4.Enabled = true;
+            }
+
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -92,6 +100,44 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
+            panel1.Enabled = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe ", "/select, " + openFileDialog1.FileName);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel1.Enabled = false;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == false)
+            {
+                panel2.Enabled = false;
+                panel2.Visible = false;
+            }
+            else
+            {
+                panel2.Enabled = true;
+                panel2.Visible = true;
+            }
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string format = comboBox3.GetItemText(comboBox3.SelectedItem);
+
 
         }
     }
