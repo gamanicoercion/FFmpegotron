@@ -11,8 +11,8 @@ using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 using System.IO;
 using System.Text.RegularExpressions;
-//using Microsoft.WindowsAPICodePack.Dialogs;
-using Microsoft.Win32;
+using Microsoft.WindowsAPICodePack.Dialogs;
+
 
 namespace WindowsFormsApp1
 {
@@ -127,7 +127,7 @@ namespace WindowsFormsApp1
             string filename = openFileDialog1.FileName;
             string chosenName = ffmpegTextBox.Text;
             string path = Path.GetDirectoryName(filename);
-            string convertedFileName = Regex.Replace(openFileDialog1.FileName + chosenName + "." + chosenFormat, openFileDialog1.SafeFileName, string.Empty);
+            string convertedFileName = Regex.Replace(openFileDialog1.FileName , openFileDialog1.SafeFileName, string.Empty) + chosenName + "." + chosenFormat;
             if (File.Exists(convertedFileName)) 
             {
                 MessageBox.Show("File with the same name exists in chosen folder, rename and try again.", "Error",
