@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
+using System.IO;
+using System.Text.RegularExpressions;
+//using Microsoft.WindowsAPICodePack.Dialogs;
+using Microsoft.Win32;
 
 namespace WindowsFormsApp1
 {
@@ -22,68 +26,6 @@ namespace WindowsFormsApp1
 
 
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string formatChosen = comboBox1.GetItemText(comboBox1.SelectedItem);
-            string filename = openFileDialog1.FileName;
-            string chosenName = textBox1.Text;
-            string path = System.IO.Path.GetDirectoryName(filename);
-
-            if (formatChosen != "" && filename.Length > 1) // && path.Length > 1
-            {
-                if (chosenName == "")
-                {
-                    chosenName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
-                }
-                var proc1 = new ProcessStartInfo();
-                proc1.UseShellExecute = true;
-
-                //proc1.WorkingDirectory = path; 
-                proc1.FileName = "cmd.exe";
-                proc1.Arguments = "/c " + $@"ffmpeg -i ""{path}\\{openFileDialog1.SafeFileName}"" {path}/{chosenName}.{formatChosen}"; //TODO: make it run in the same folder as the executable
-                proc1.WindowStyle = ProcessWindowStyle.Hidden;
-                Process.Start(proc1);
-            }
-            else
-            {
-                MessageBox.Show("Please fill out the required fields!", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        public void button2_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.Filter = "Media Files|*.mp4;*.mp3;*.wav;*.mkv;*.mov";
-            openFileDialog1.InitialDirectory = "";
-            openFileDialog1.Title = "Choose a media file!";
-            openFileDialog1.ShowDialog();
-            string filename = string.Empty;
-            string file_path = string.Empty;
-            if (openFileDialog1.FileName != "openFileDialog1")
-            {
-                filename = $"Chosen File: {openFileDialog1.SafeFileName}";
-                file_path = $"Path: {openFileDialog1.FileName}";
-                label1.Text = filename;
-                label6.Text = file_path;
-                button4.Enabled = true;
-            }
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void folderBrowserDialog1_HelpRequest(object sender, EventArgs e)
-        {
-
-        }
-
-        public void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string format = comboBox1.GetItemText(comboBox1.SelectedItem);
-            label2.Text = $"Chosen format: {format}";
-        }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
@@ -95,35 +37,62 @@ namespace WindowsFormsApp1
         }
         async void downloadDependancies()
         {
-            await YoutubeDLSharp.Utils.DownloadYtDlp();
             await YoutubeDLSharp.Utils.DownloadFFmpeg();
+            await YoutubeDLSharp.Utils.DownloadYtDlp();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            panel1.Visible = true;
-            panel1.Enabled = true;
+
+            string format = ytDownloaderFormatBox.GetItemText(ytDownloaderFormatBox.SelectedItem);
+            var formats = new List<string> { "mkv", "mov", "mp4", "avi" };
+            if (format != "mp3" && format != "wav")
+            {
+                ytVideoResBox.Enabled = true;
+                ytVideoResLabel.Enabled = true;
+            }
+            else
+            {
+                ytVideoResBox.Enabled = false;
+                ytVideoResLabel.Enabled = false;
+            }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void ytDownloadVideoButton(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe ", "/select, " + openFileDialog1.FileName);
+            string chosenName = fileNameBox2.Text;
+            if (chosenName == "")
+            {
+                chosenName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+            }
+            string formatChosen = ytDownloaderFormatBox.Text;
+            string folderPath = folderDialog.FileName;
+            
+            string vidResolution = Regex.Replace(ytVideoResBox.Text, "p", string.Empty);
+            //if (formatChosen != "" && filename.Length > 1)
+            {
+                if (chosenName == "")
+                {
+                    chosenName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+                }
+                var proc2 = new ProcessStartInfo();
+                proc2.UseShellExecute = true;
+                proc2.WorkingDirectory = "./";
+                proc2.FileName = "cmd.exe";
+                proc2.Arguments = "/c " + $@"yt-dlp -o ""{chosenName}"" --recode-video {formatChosen} -S res:{vidResolution} -P ""{folderPath}"" " ;
+                proc2.WindowStyle = ProcessWindowStyle.Hidden;
+                Process.Start(proc2);
+            }
+            /*else
+            {
+                MessageBox.Show("Please fill out the required fields!", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }*/
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void moreStatsTickChanged(object sender, EventArgs e)
         {
-            panel1.Visible = false;
-            panel1.Enabled = false;
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked == false)
+            if (moreStatsToggle.Checked == false)
             {
                 panel2.Enabled = false;
                 panel2.Visible = false;
@@ -133,27 +102,95 @@ namespace WindowsFormsApp1
                 panel2.Enabled = true;
                 panel2.Visible = true;
             }
+            ytVideoResLabel.Text = folderDialog.FileName;
         }
 
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        private void switchToFFmpegClick(object sender, EventArgs e)
         {
-            string format = comboBox3.GetItemText(comboBox3.SelectedItem);
-            var formats = new List<string> { "mkv", "mov", "mp4", "avi" };
-            foreach (var frmt in formats) {
-                if (frmt == format)
+            panel1.Visible = false;
+            panel1.Enabled = false;
+        }
+
+        public void ytChooseDownloadDirButtonClick(object sender, EventArgs e)
+        {
+            CommonOpenFileDialog folderDialog = new CommonOpenFileDialog();
+            folderDialog.InitialDirectory = "./";
+            folderDialog.IsFolderPicker = true;
+            folderDialog.Title = "Pick a folder!";
+            folderDialog.ShowDialog();
+
+        }
+
+        private void convertFileFFmpegClick(object sender, EventArgs e)
+        {
+            string chosenFormat = ffmpegMediaFormatBox.GetItemText(ffmpegMediaFormatBox.SelectedItem);
+            string filename = openFileDialog1.FileName;
+            string chosenName = ffmpegTextBox.Text;
+            string path = Path.GetDirectoryName(filename);
+            string convertedFileName = Regex.Replace(openFileDialog1.FileName + chosenName + "." + chosenFormat, openFileDialog1.SafeFileName, string.Empty);
+            if (File.Exists(convertedFileName)) 
+            {
+                MessageBox.Show("File with the same name exists in chosen folder, rename and try again.", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+
+                if (chosenFormat != "" && filename.Length > 1)
                 {
-                    comboBox2.Enabled = true;
-                    comboBox2.Visible = true;
-                    label8.Visible = true;
+                    if (chosenName == "")
+                    {
+                        chosenName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+                    }
+                    var proc1 = new ProcessStartInfo();
+                    proc1.UseShellExecute = true;
+                    proc1.WorkingDirectory = "./";
+                    proc1.FileName = "cmd.exe";
+                    proc1.Arguments = "/c " + $@"ffmpeg -i ""{path}\{openFileDialog1.SafeFileName}"" {path}/""{chosenName}"".{chosenFormat}";
+                    proc1.WindowStyle = ProcessWindowStyle.Hidden;
+                    Process.Start(proc1);
                 }
                 else
                 {
-                    comboBox2.Visible = false;
-                    comboBox2.Enabled = false;
-                    label8.Visible = false;
+                    MessageBox.Show("Please fill out the required fields!", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
 
+        private void goToFileClick(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe ", "/select, " + openFileDialog1.FileName);
+        }
+
+        private void ffmpegChooseFileClick(object sender, EventArgs e)
+        {
+            fileChosenLabel.Visible = false;
+            openFileDialog1.Filter = "Media Files|*.mp4;*.mp3;*.wav;*.mkv;*.mov";
+            openFileDialog1.InitialDirectory = "";
+            openFileDialog1.Title = "Choose a media file!";
+            openFileDialog1.ShowDialog();
+            string filename = string.Empty;
+            string file_path = string.Empty;
+            if (openFileDialog1.FileName != "openFileDialog1")
+            {
+                file_path = $"File: {openFileDialog1.FileName}";
+                ffmpegGoToFileButton.Enabled = true;
+                fileChosenLabel.Text = file_path;
+                fileChosenLabel.Visible = true;
+            }
+        }
+
+        private void ffmpegChooseFormatBoxChanged(object sender, EventArgs e)
+        {
+            string format = ffmpegMediaFormatBox.GetItemText(ffmpegMediaFormatBox.SelectedItem);
+        }
+
+        private void changeToYTDownloaderClick(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            panel1.Enabled = true;
         }
     }
 }
+

@@ -118,550 +118,379 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="ffmpegChooseFileButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ffmpegChooseFileButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 36</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ffmpegChooseFileButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 47</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="ffmpegChooseFileButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
+  <data name="ffmpegChooseFileButton.Text" xml:space="preserve">
     <value>Choose File</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;ffmpegChooseFileButton.Name" xml:space="preserve">
+    <value>ffmpegChooseFileButton</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;ffmpegChooseFileButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ffmpegChooseFileButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;ffmpegChooseFileButton.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>31, 12</value>
   </metadata>
-  <data name="comboBox1.Items" xml:space="preserve">
+  <data name="ffmpegMediaFormatBox.Items" xml:space="preserve">
     <value>mp3</value>
   </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
+  <data name="ffmpegMediaFormatBox.Items1" xml:space="preserve">
     <value>wav</value>
   </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
+  <data name="ffmpegMediaFormatBox.Items2" xml:space="preserve">
     <value>mp4</value>
   </data>
-  <data name="comboBox1.Items3" xml:space="preserve">
+  <data name="ffmpegMediaFormatBox.Items3" xml:space="preserve">
     <value>mkv</value>
   </data>
-  <data name="comboBox1.Items4" xml:space="preserve">
+  <data name="ffmpegMediaFormatBox.Items4" xml:space="preserve">
     <value>mov</value>
   </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ffmpegMediaFormatBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>296, 61</value>
   </data>
-  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ffmpegMediaFormatBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 21</value>
   </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="ffmpegMediaFormatBox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
+  <data name="&gt;&gt;ffmpegMediaFormatBox.Name" xml:space="preserve">
+    <value>ffmpegMediaFormatBox</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;ffmpegMediaFormatBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ffmpegMediaFormatBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 100</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 144</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ffmpegMediaFormatBox.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="convetFileButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 24pt</value>
   </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="convetFileButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="convetFileButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>241, 155</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="convetFileButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>274, 136</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="convetFileButton.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="convetFileButton.Text" xml:space="preserve">
     <value>Convert File</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;convetFileButton.Name" xml:space="preserve">
+    <value>convetFileButton</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;convetFileButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;convetFileButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;convetFileButton.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+  <data name="yourFileWillBeInLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="yourFileWillBeInLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 15.75pt</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="yourFileWillBeInLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>118, 307</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="yourFileWillBeInLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>524, 25</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+  <data name="yourFileWillBeInLabel.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
+  <data name="yourFileWillBeInLabel.Text" xml:space="preserve">
     <value>*Your file will be in the same folder as the chosen file.</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
+  <data name="&gt;&gt;yourFileWillBeInLabel.Name" xml:space="preserve">
+    <value>yourFileWillBeInLabel</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+  <data name="&gt;&gt;yourFileWillBeInLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;yourFileWillBeInLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;yourFileWillBeInLabel.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ffmpegTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>555, 62</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ffmpegTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 20</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="ffmpegTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;ffmpegTextBox.Name" xml:space="preserve">
+    <value>ffmpegTextBox</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;ffmpegTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ffmpegTextBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ffmpegTextBox.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="ffmpegChooseFormatLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 45</value>
+  <data name="ffmpegChooseFormatLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 45</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ffmpegChooseFormatLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 13</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+  <data name="ffmpegChooseFormatLabel.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="ffmpegChooseFormatLabel.Text" xml:space="preserve">
     <value>Choose a media format:</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;ffmpegChooseFormatLabel.Name" xml:space="preserve">
+    <value>ffmpegChooseFormatLabel</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+  <data name="&gt;&gt;ffmpegChooseFormatLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ffmpegChooseFormatLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ffmpegChooseFormatLabel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+  <data name="defaultText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="defaultText.Location" type="System.Drawing.Point, System.Drawing">
     <value>552, 45</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="defaultText.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 13</value>
   </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+  <data name="defaultText.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
+  <data name="defaultText.Text" xml:space="preserve">
     <value>Name your file! (Optional)</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
+  <data name="&gt;&gt;defaultText.Name" xml:space="preserve">
+    <value>defaultText</value>
   </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+  <data name="&gt;&gt;defaultText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;defaultText.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;defaultText.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="switchToYoutubeButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="switchToYoutubeButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 380</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="switchToYoutubeButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 69</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="switchToYoutubeButton.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="switchToYoutubeButton.Text" xml:space="preserve">
     <value>Switch to YouTube downloader</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;switchToYoutubeButton.Name" xml:space="preserve">
+    <value>switchToYoutubeButton</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;switchToYoutubeButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;switchToYoutubeButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;switchToYoutubeButton.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;defaultResLbl.Name" xml:space="preserve">
+    <value>defaultResLbl</value>
   </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>314, 44</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 13</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Video format:</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+  <data name="&gt;&gt;defaultResLbl.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+  <data name="&gt;&gt;defaultResLbl.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;defaultResLbl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="comboBox3.Items" xml:space="preserve">
-    <value>mp3</value>
+  <data name="&gt;&gt;folderChooseButton.Name" xml:space="preserve">
+    <value>folderChooseButton</value>
   </data>
-  <data name="comboBox3.Items1" xml:space="preserve">
-    <value>wav</value>
+  <data name="&gt;&gt;folderChooseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="comboBox3.Items2" xml:space="preserve">
-    <value>mp4</value>
-  </data>
-  <data name="comboBox3.Items3" xml:space="preserve">
-    <value>mkv</value>
-  </data>
-  <data name="comboBox3.Items4" xml:space="preserve">
-    <value>mov</value>
-  </data>
-  <data name="comboBox3.Items5" xml:space="preserve">
-    <value>avi</value>
-  </data>
-  <data name="comboBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 61</value>
-  </data>
-  <data name="comboBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="comboBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.Name" xml:space="preserve">
-    <value>comboBox3</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;folderChooseButton.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;comboBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;folderChooseButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;nameUrFile2.Name" xml:space="preserve">
+    <value>nameUrFile2</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 45</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Video link:</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+  <data name="&gt;&gt;nameUrFile2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;nameUrFile2.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;nameUrFile2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 61</value>
+  <data name="&gt;&gt;fileNameBox2.Name" xml:space="preserve">
+    <value>fileNameBox2</value>
   </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 20</value>
-  </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;fileNameBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;fileNameBox2.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;fileNameBox2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="button6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
+  <data name="&gt;&gt;videoFormatLabel2.Name" xml:space="preserve">
+    <value>videoFormatLabel2</value>
   </data>
-  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>241, 155</value>
-  </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>274, 136</value>
-  </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="button6.Text" xml:space="preserve">
-    <value>Download Video</value>
-  </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
-  </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 380</value>
-  </data>
-  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 69</value>
-  </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="button5.Text" xml:space="preserve">
-    <value>Switch to file convertor</value>
-  </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
-  </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 98</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Video resolution:</value>
-  </data>
-  <data name="label8.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+  <data name="&gt;&gt;videoFormatLabel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;videoFormatLabel2.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;videoFormatLabel2.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="comboBox2.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;ytDownloaderFormatBox.Name" xml:space="preserve">
+    <value>ytDownloaderFormatBox</value>
   </data>
-  <data name="comboBox2.Items" xml:space="preserve">
-    <value>2160p</value>
-  </data>
-  <data name="comboBox2.Items1" xml:space="preserve">
-    <value>1440p</value>
-  </data>
-  <data name="comboBox2.Items2" xml:space="preserve">
-    <value>1080p</value>
-  </data>
-  <data name="comboBox2.Items3" xml:space="preserve">
-    <value>720p</value>
-  </data>
-  <data name="comboBox2.Items4" xml:space="preserve">
-    <value>480p</value>
-  </data>
-  <data name="comboBox2.Items5" xml:space="preserve">
-    <value>360p</value>
-  </data>
-  <data name="comboBox2.Items6" xml:space="preserve">
-    <value>144p</value>
-  </data>
-  <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 114</value>
-  </data>
-  <data name="comboBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="comboBox2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;comboBox2.Name" xml:space="preserve">
-    <value>comboBox2</value>
-  </data>
-  <data name="&gt;&gt;comboBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;ytDownloaderFormatBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ytDownloaderFormatBox.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="panel2.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 116</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 230</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;ytDownloaderFormatBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="panel2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;videoLinkLabel.Name" xml:space="preserve">
+    <value>videoLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;videoLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;videoLinkLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;videoLinkLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;videoLinkBox.Name" xml:space="preserve">
+    <value>videoLinkBox</value>
+  </data>
+  <data name="&gt;&gt;videoLinkBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;videoLinkBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;videoLinkBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;downloadVidButton.Name" xml:space="preserve">
+    <value>downloadVidButton</value>
+  </data>
+  <data name="&gt;&gt;downloadVidButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;downloadVidButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;downloadVidButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;switchToFFmpegButton.Name" xml:space="preserve">
+    <value>switchToFFmpegButton</value>
+  </data>
+  <data name="&gt;&gt;switchToFFmpegButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;switchToFFmpegButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;switchToFFmpegButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResLabel.Name" xml:space="preserve">
+    <value>ytVideoResLabel</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResBox.Name" xml:space="preserve">
+    <value>ytVideoResBox</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResBox.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="&gt;&gt;panel2.Name" xml:space="preserve">
     <value>panel2</value>
@@ -673,34 +502,31 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
-  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;moreStatsToggle.Name" xml:space="preserve">
+    <value>moreStatsToggle</value>
   </data>
-  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 96</value>
-  </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 17</value>
-  </data>
-  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>More stats:</value>
-  </data>
-  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
-    <value>checkBox1</value>
-  </data>
-  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;moreStatsToggle.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;moreStatsToggle.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;moreStatsToggle.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;defaultText2.Name" xml:space="preserve">
+    <value>defaultText2</value>
+  </data>
+  <data name="&gt;&gt;defaultText2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;defaultText2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;defaultText2.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
   <data name="panel1.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -729,59 +555,524 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button4.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>329, 335</value>
-  </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 37</value>
-  </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>Go to file </value>
-  </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+  <data name="defaultResLbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 122</value>
+  <data name="defaultResLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 139</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+  <data name="defaultResLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 13</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+  <data name="defaultResLbl.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="defaultResLbl.Text" xml:space="preserve">
+    <value>*Default resolution is 1920x1080</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+  <data name="&gt;&gt;defaultResLbl.Name" xml:space="preserve">
+    <value>defaultResLbl</value>
+  </data>
+  <data name="&gt;&gt;defaultResLbl.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;defaultResLbl.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;defaultResLbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="folderChooseButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="folderChooseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>555, 114</value>
+  </data>
+  <data name="folderChooseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 43</value>
+  </data>
+  <data name="folderChooseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="folderChooseButton.Text" xml:space="preserve">
+    <value>Choose folder to download to:</value>
+  </data>
+  <data name="&gt;&gt;folderChooseButton.Name" xml:space="preserve">
+    <value>folderChooseButton</value>
+  </data>
+  <data name="&gt;&gt;folderChooseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;folderChooseButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;folderChooseButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="nameUrFile2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nameUrFile2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>552, 45</value>
+  </data>
+  <data name="nameUrFile2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 13</value>
+  </data>
+  <data name="nameUrFile2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="nameUrFile2.Text" xml:space="preserve">
+    <value>Name your file! (Optional)</value>
+  </data>
+  <data name="&gt;&gt;nameUrFile2.Name" xml:space="preserve">
+    <value>nameUrFile2</value>
+  </data>
+  <data name="&gt;&gt;nameUrFile2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameUrFile2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;nameUrFile2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fileNameBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>555, 62</value>
+  </data>
+  <data name="fileNameBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="fileNameBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;fileNameBox2.Name" xml:space="preserve">
+    <value>fileNameBox2</value>
+  </data>
+  <data name="&gt;&gt;fileNameBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fileNameBox2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;fileNameBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="videoFormatLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="videoFormatLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 44</value>
+  </data>
+  <data name="videoFormatLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="videoFormatLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="videoFormatLabel2.Text" xml:space="preserve">
+    <value>Video format:</value>
+  </data>
+  <data name="&gt;&gt;videoFormatLabel2.Name" xml:space="preserve">
+    <value>videoFormatLabel2</value>
+  </data>
+  <data name="&gt;&gt;videoFormatLabel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;videoFormatLabel2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;videoFormatLabel2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ytDownloaderFormatBox.Items" xml:space="preserve">
+    <value>mp3</value>
+  </data>
+  <data name="ytDownloaderFormatBox.Items1" xml:space="preserve">
+    <value>wav</value>
+  </data>
+  <data name="ytDownloaderFormatBox.Items2" xml:space="preserve">
+    <value>mp4</value>
+  </data>
+  <data name="ytDownloaderFormatBox.Items3" xml:space="preserve">
+    <value>mkv</value>
+  </data>
+  <data name="ytDownloaderFormatBox.Items4" xml:space="preserve">
+    <value>mov</value>
+  </data>
+  <data name="ytDownloaderFormatBox.Items5" xml:space="preserve">
+    <value>avi</value>
+  </data>
+  <data name="ytDownloaderFormatBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 61</value>
+  </data>
+  <data name="ytDownloaderFormatBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="ytDownloaderFormatBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ytDownloaderFormatBox.Name" xml:space="preserve">
+    <value>ytDownloaderFormatBox</value>
+  </data>
+  <data name="&gt;&gt;ytDownloaderFormatBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ytDownloaderFormatBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;ytDownloaderFormatBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="videoLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="videoLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 45</value>
+  </data>
+  <data name="videoLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="videoLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="videoLinkLabel.Text" xml:space="preserve">
+    <value>Video link:</value>
+  </data>
+  <data name="&gt;&gt;videoLinkLabel.Name" xml:space="preserve">
+    <value>videoLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;videoLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;videoLinkLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;videoLinkLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="videoLinkBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 61</value>
+  </data>
+  <data name="videoLinkBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 20</value>
+  </data>
+  <data name="videoLinkBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;videoLinkBox.Name" xml:space="preserve">
+    <value>videoLinkBox</value>
+  </data>
+  <data name="&gt;&gt;videoLinkBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;videoLinkBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;videoLinkBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="downloadVidButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt</value>
+  </data>
+  <data name="downloadVidButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="downloadVidButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 155</value>
+  </data>
+  <data name="downloadVidButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 136</value>
+  </data>
+  <data name="downloadVidButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="downloadVidButton.Text" xml:space="preserve">
+    <value>Download Video</value>
+  </data>
+  <data name="&gt;&gt;downloadVidButton.Name" xml:space="preserve">
+    <value>downloadVidButton</value>
+  </data>
+  <data name="&gt;&gt;downloadVidButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;downloadVidButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;downloadVidButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="switchToFFmpegButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="switchToFFmpegButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 380</value>
+  </data>
+  <data name="switchToFFmpegButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 69</value>
+  </data>
+  <data name="switchToFFmpegButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="switchToFFmpegButton.Text" xml:space="preserve">
+    <value>Switch to file convertor</value>
+  </data>
+  <data name="&gt;&gt;switchToFFmpegButton.Name" xml:space="preserve">
+    <value>switchToFFmpegButton</value>
+  </data>
+  <data name="&gt;&gt;switchToFFmpegButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;switchToFFmpegButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;switchToFFmpegButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ytVideoResLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ytVideoResLabel.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ytVideoResLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>311, 98</value>
+  </data>
+  <data name="ytVideoResLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="ytVideoResLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ytVideoResLabel.Text" xml:space="preserve">
+    <value>Video resolution:</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResLabel.Name" xml:space="preserve">
+    <value>ytVideoResLabel</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ytVideoResBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ytVideoResBox.Items" xml:space="preserve">
+    <value>2160p</value>
+  </data>
+  <data name="ytVideoResBox.Items1" xml:space="preserve">
+    <value>1440p</value>
+  </data>
+  <data name="ytVideoResBox.Items2" xml:space="preserve">
+    <value>1080p</value>
+  </data>
+  <data name="ytVideoResBox.Items3" xml:space="preserve">
+    <value>720p</value>
+  </data>
+  <data name="ytVideoResBox.Items4" xml:space="preserve">
+    <value>480p</value>
+  </data>
+  <data name="ytVideoResBox.Items5" xml:space="preserve">
+    <value>360p</value>
+  </data>
+  <data name="ytVideoResBox.Items6" xml:space="preserve">
+    <value>144p</value>
+  </data>
+  <data name="ytVideoResBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 114</value>
+  </data>
+  <data name="ytVideoResBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="ytVideoResBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResBox.Name" xml:space="preserve">
+    <value>ytVideoResBox</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;ytVideoResBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="panel2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 116</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 230</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="panel2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="moreStatsToggle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="moreStatsToggle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="moreStatsToggle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 96</value>
+  </data>
+  <data name="moreStatsToggle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 17</value>
+  </data>
+  <data name="moreStatsToggle.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="moreStatsToggle.Text" xml:space="preserve">
+    <value>More stats:</value>
+  </data>
+  <data name="&gt;&gt;moreStatsToggle.Name" xml:space="preserve">
+    <value>moreStatsToggle</value>
+  </data>
+  <data name="&gt;&gt;moreStatsToggle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;moreStatsToggle.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;moreStatsToggle.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="defaultText2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="defaultText2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 85</value>
+  </data>
+  <data name="defaultText2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 13</value>
+  </data>
+  <data name="defaultText2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="defaultText2.Text" xml:space="preserve">
+    <value>*Defaults the file name to the current date and time</value>
+  </data>
+  <data name="&gt;&gt;defaultText2.Name" xml:space="preserve">
+    <value>defaultText2</value>
+  </data>
+  <data name="&gt;&gt;defaultText2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;defaultText2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;defaultText2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ffmpegGoToFileButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ffmpegGoToFileButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="ffmpegGoToFileButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 335</value>
+  </data>
+  <data name="ffmpegGoToFileButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 37</value>
+  </data>
+  <data name="ffmpegGoToFileButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="ffmpegGoToFileButton.Text" xml:space="preserve">
+    <value>Go to file </value>
+  </data>
+  <data name="&gt;&gt;ffmpegGoToFileButton.Name" xml:space="preserve">
+    <value>ffmpegGoToFileButton</value>
+  </data>
+  <data name="&gt;&gt;ffmpegGoToFileButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ffmpegGoToFileButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;ffmpegGoToFileButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 85</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 13</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>*Defaults the file name to the current date and time</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fileChosenLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fileChosenLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 86</value>
+  </data>
+  <data name="fileChosenLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="fileChosenLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="fileChosenLabel.Text" xml:space="preserve">
+    <value>chosenFileText</value>
+  </data>
+  <data name="fileChosenLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;fileChosenLabel.Name" xml:space="preserve">
+    <value>fileChosenLabel</value>
+  </data>
+  <data name="&gt;&gt;fileChosenLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fileChosenLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fileChosenLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -29,170 +29,211 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FFmpegotron));
-            this.button2 = new System.Windows.Forms.Button();
+            this.ffmpegChooseFileButton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.ffmpegMediaFormatBox = new System.Windows.Forms.ComboBox();
+            this.convetFileButton = new System.Windows.Forms.Button();
+            this.yourFileWillBeInLabel = new System.Windows.Forms.Label();
+            this.ffmpegTextBox = new System.Windows.Forms.TextBox();
+            this.ffmpegChooseFormatLabel = new System.Windows.Forms.Label();
+            this.defaultText = new System.Windows.Forms.Label();
+            this.switchToYoutubeButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.defaultResLbl = new System.Windows.Forms.Label();
+            this.folderChooseButton = new System.Windows.Forms.Button();
+            this.nameUrFile2 = new System.Windows.Forms.Label();
+            this.fileNameBox2 = new System.Windows.Forms.TextBox();
+            this.videoFormatLabel2 = new System.Windows.Forms.Label();
+            this.ytDownloaderFormatBox = new System.Windows.Forms.ComboBox();
+            this.videoLinkLabel = new System.Windows.Forms.Label();
+            this.videoLinkBox = new System.Windows.Forms.TextBox();
+            this.downloadVidButton = new System.Windows.Forms.Button();
+            this.switchToFFmpegButton = new System.Windows.Forms.Button();
+            this.ytVideoResLabel = new System.Windows.Forms.Label();
+            this.ytVideoResBox = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.moreStatsToggle = new System.Windows.Forms.CheckBox();
+            this.defaultText2 = new System.Windows.Forms.Label();
+            this.ffmpegGoToFileButton = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.fileChosenLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button2
+            // ffmpegChooseFileButton
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ffmpegChooseFileButton.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.ffmpegChooseFileButton, "ffmpegChooseFileButton");
+            this.ffmpegChooseFileButton.Name = "ffmpegChooseFileButton";
+            this.ffmpegChooseFileButton.UseVisualStyleBackColor = false;
+            this.ffmpegChooseFileButton.Click += new System.EventHandler(this.ffmpegChooseFileClick);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
-            // comboBox1
+            // ffmpegMediaFormatBox
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2"),
-            resources.GetString("comboBox1.Items3"),
-            resources.GetString("comboBox1.Items4")});
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.ffmpegMediaFormatBox.BackColor = System.Drawing.SystemColors.Window;
+            this.ffmpegMediaFormatBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ffmpegMediaFormatBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ffmpegMediaFormatBox.FormattingEnabled = true;
+            this.ffmpegMediaFormatBox.Items.AddRange(new object[] {
+            resources.GetString("ffmpegMediaFormatBox.Items"),
+            resources.GetString("ffmpegMediaFormatBox.Items1"),
+            resources.GetString("ffmpegMediaFormatBox.Items2"),
+            resources.GetString("ffmpegMediaFormatBox.Items3"),
+            resources.GetString("ffmpegMediaFormatBox.Items4")});
+            resources.ApplyResources(this.ffmpegMediaFormatBox, "ffmpegMediaFormatBox");
+            this.ffmpegMediaFormatBox.Name = "ffmpegMediaFormatBox";
+            this.ffmpegMediaFormatBox.SelectedIndexChanged += new System.EventHandler(this.ffmpegChooseFormatBoxChanged);
             // 
-            // label1
+            // convetFileButton
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            this.convetFileButton.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.convetFileButton, "convetFileButton");
+            this.convetFileButton.Name = "convetFileButton";
+            this.convetFileButton.UseVisualStyleBackColor = false;
+            this.convetFileButton.Click += new System.EventHandler(this.convertFileFFmpegClick);
             // 
-            // label2
+            // yourFileWillBeInLabel
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.yourFileWillBeInLabel, "yourFileWillBeInLabel");
+            this.yourFileWillBeInLabel.Name = "yourFileWillBeInLabel";
             // 
-            // button1
+            // ffmpegTextBox
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(this.ffmpegTextBox, "ffmpegTextBox");
+            this.ffmpegTextBox.Name = "ffmpegTextBox";
             // 
-            // label3
+            // ffmpegChooseFormatLabel
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.ffmpegChooseFormatLabel, "ffmpegChooseFormatLabel");
+            this.ffmpegChooseFormatLabel.Name = "ffmpegChooseFormatLabel";
             // 
-            // textBox1
+            // defaultText
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.defaultText, "defaultText");
+            this.defaultText.Name = "defaultText";
             // 
-            // label4
+            // switchToYoutubeButton
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.switchToYoutubeButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            resources.ApplyResources(this.switchToYoutubeButton, "switchToYoutubeButton");
+            this.switchToYoutubeButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.switchToYoutubeButton.Name = "switchToYoutubeButton";
+            this.switchToYoutubeButton.UseVisualStyleBackColor = false;
+            this.switchToYoutubeButton.Click += new System.EventHandler(this.changeToYTDownloaderClick);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.defaultResLbl);
+            this.panel1.Controls.Add(this.folderChooseButton);
+            this.panel1.Controls.Add(this.nameUrFile2);
+            this.panel1.Controls.Add(this.fileNameBox2);
+            this.panel1.Controls.Add(this.videoFormatLabel2);
+            this.panel1.Controls.Add(this.ytDownloaderFormatBox);
+            this.panel1.Controls.Add(this.videoLinkLabel);
+            this.panel1.Controls.Add(this.videoLinkBox);
+            this.panel1.Controls.Add(this.downloadVidButton);
+            this.panel1.Controls.Add(this.switchToFFmpegButton);
+            this.panel1.Controls.Add(this.ytVideoResLabel);
+            this.panel1.Controls.Add(this.ytVideoResBox);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.moreStatsToggle);
+            this.panel1.Controls.Add(this.defaultText2);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // label9
+            // defaultResLbl
             // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
+            resources.ApplyResources(this.defaultResLbl, "defaultResLbl");
+            this.defaultResLbl.Name = "defaultResLbl";
             // 
-            // comboBox3
+            // folderChooseButton
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            resources.GetString("comboBox3.Items"),
-            resources.GetString("comboBox3.Items1"),
-            resources.GetString("comboBox3.Items2"),
-            resources.GetString("comboBox3.Items3"),
-            resources.GetString("comboBox3.Items4"),
-            resources.GetString("comboBox3.Items5")});
-            resources.ApplyResources(this.comboBox3, "comboBox3");
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            resources.ApplyResources(this.folderChooseButton, "folderChooseButton");
+            this.folderChooseButton.Name = "folderChooseButton";
+            this.folderChooseButton.UseVisualStyleBackColor = true;
+            this.folderChooseButton.Click += new System.EventHandler(this.ytChooseDownloadDirButtonClick);
             // 
-            // label7
+            // nameUrFile2
             // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
+            resources.ApplyResources(this.nameUrFile2, "nameUrFile2");
+            this.nameUrFile2.Name = "nameUrFile2";
             // 
-            // textBox2
+            // fileNameBox2
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.fileNameBox2, "fileNameBox2");
+            this.fileNameBox2.Name = "fileNameBox2";
             // 
-            // button6
+            // videoFormatLabel2
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            resources.ApplyResources(this.videoFormatLabel2, "videoFormatLabel2");
+            this.videoFormatLabel2.Name = "videoFormatLabel2";
             // 
-            // button5
+            // ytDownloaderFormatBox
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.ForeColor = System.Drawing.SystemColors.Window;
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.ytDownloaderFormatBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ytDownloaderFormatBox.FormattingEnabled = true;
+            this.ytDownloaderFormatBox.Items.AddRange(new object[] {
+            resources.GetString("ytDownloaderFormatBox.Items"),
+            resources.GetString("ytDownloaderFormatBox.Items1"),
+            resources.GetString("ytDownloaderFormatBox.Items2"),
+            resources.GetString("ytDownloaderFormatBox.Items3"),
+            resources.GetString("ytDownloaderFormatBox.Items4"),
+            resources.GetString("ytDownloaderFormatBox.Items5")});
+            resources.ApplyResources(this.ytDownloaderFormatBox, "ytDownloaderFormatBox");
+            this.ytDownloaderFormatBox.Name = "ytDownloaderFormatBox";
+            this.ytDownloaderFormatBox.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // videoLinkLabel
+            // 
+            resources.ApplyResources(this.videoLinkLabel, "videoLinkLabel");
+            this.videoLinkLabel.Name = "videoLinkLabel";
+            // 
+            // videoLinkBox
+            // 
+            resources.ApplyResources(this.videoLinkBox, "videoLinkBox");
+            this.videoLinkBox.Name = "videoLinkBox";
+            // 
+            // downloadVidButton
+            // 
+            this.downloadVidButton.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.downloadVidButton, "downloadVidButton");
+            this.downloadVidButton.Name = "downloadVidButton";
+            this.downloadVidButton.UseVisualStyleBackColor = false;
+            this.downloadVidButton.Click += new System.EventHandler(this.ytDownloadVideoButton);
+            // 
+            // switchToFFmpegButton
+            // 
+            this.switchToFFmpegButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            resources.ApplyResources(this.switchToFFmpegButton, "switchToFFmpegButton");
+            this.switchToFFmpegButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.switchToFFmpegButton.Name = "switchToFFmpegButton";
+            this.switchToFFmpegButton.UseVisualStyleBackColor = false;
+            this.switchToFFmpegButton.Click += new System.EventHandler(this.switchToFFmpegClick);
+            // 
+            // ytVideoResLabel
+            // 
+            resources.ApplyResources(this.ytVideoResLabel, "ytVideoResLabel");
+            this.ytVideoResLabel.Name = "ytVideoResLabel";
+            // 
+            // ytVideoResBox
+            // 
+            this.ytVideoResBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.ytVideoResBox, "ytVideoResBox");
+            this.ytVideoResBox.FormattingEnabled = true;
+            this.ytVideoResBox.Items.AddRange(new object[] {
+            resources.GetString("ytVideoResBox.Items"),
+            resources.GetString("ytVideoResBox.Items1"),
+            resources.GetString("ytVideoResBox.Items2"),
+            resources.GetString("ytVideoResBox.Items3"),
+            resources.GetString("ytVideoResBox.Items4"),
+            resources.GetString("ytVideoResBox.Items5"),
+            resources.GetString("ytVideoResBox.Items6")});
+            this.ytVideoResBox.Name = "ytVideoResBox";
             // 
             // panel2
             // 
@@ -200,44 +241,34 @@
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
-            // checkBox1
+            // moreStatsToggle
             // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            resources.ApplyResources(this.moreStatsToggle, "moreStatsToggle");
+            this.moreStatsToggle.Name = "moreStatsToggle";
+            this.moreStatsToggle.UseVisualStyleBackColor = true;
+            this.moreStatsToggle.CheckedChanged += new System.EventHandler(this.moreStatsTickChanged);
             // 
-            // label8
+            // defaultText2
             // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
+            resources.ApplyResources(this.defaultText2, "defaultText2");
+            this.defaultText2.Name = "defaultText2";
             // 
-            // comboBox2
+            // ffmpegGoToFileButton
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            resources.GetString("comboBox2.Items"),
-            resources.GetString("comboBox2.Items1"),
-            resources.GetString("comboBox2.Items2"),
-            resources.GetString("comboBox2.Items3"),
-            resources.GetString("comboBox2.Items4"),
-            resources.GetString("comboBox2.Items5"),
-            resources.GetString("comboBox2.Items6")});
-            this.comboBox2.Name = "comboBox2";
+            resources.ApplyResources(this.ffmpegGoToFileButton, "ffmpegGoToFileButton");
+            this.ffmpegGoToFileButton.Name = "ffmpegGoToFileButton";
+            this.ffmpegGoToFileButton.UseVisualStyleBackColor = true;
+            this.ffmpegGoToFileButton.Click += new System.EventHandler(this.goToFileClick);
             // 
-            // button4
+            // label11
             // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
             // 
-            // label6
+            // fileChosenLabel
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
+            resources.ApplyResources(this.fileChosenLabel, "fileChosenLabel");
+            this.fileChosenLabel.Name = "fileChosenLabel";
             // 
             // FFmpegotron
             // 
@@ -245,18 +276,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.switchToYoutubeButton);
+            this.Controls.Add(this.ffmpegGoToFileButton);
+            this.Controls.Add(this.defaultText);
+            this.Controls.Add(this.ffmpegChooseFormatLabel);
+            this.Controls.Add(this.ffmpegTextBox);
+            this.Controls.Add(this.yourFileWillBeInLabel);
+            this.Controls.Add(this.convetFileButton);
+            this.Controls.Add(this.ffmpegMediaFormatBox);
+            this.Controls.Add(this.ffmpegChooseFileButton);
+            this.Controls.Add(this.fileChosenLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "FFmpegotron";
@@ -269,30 +299,34 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ffmpegChooseFileButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox ffmpegMediaFormatBox;
+        private System.Windows.Forms.Button convetFileButton;
+        private System.Windows.Forms.Label yourFileWillBeInLabel;
+        private System.Windows.Forms.TextBox ffmpegTextBox;
+        private System.Windows.Forms.Label ffmpegChooseFormatLabel;
+        private System.Windows.Forms.Label defaultText;
+        private System.Windows.Forms.Button switchToYoutubeButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button ffmpegGoToFileButton;
+        private System.Windows.Forms.Button switchToFFmpegButton;
+        private System.Windows.Forms.Button downloadVidButton;
+        private System.Windows.Forms.Label videoLinkLabel;
+        private System.Windows.Forms.TextBox videoLinkBox;
+        private System.Windows.Forms.Label ytVideoResLabel;
+        private System.Windows.Forms.ComboBox ytVideoResBox;
+        private System.Windows.Forms.Label videoFormatLabel2;
+        private System.Windows.Forms.ComboBox ytDownloaderFormatBox;
+        private System.Windows.Forms.Label nameUrFile2;
+        private System.Windows.Forms.TextBox fileNameBox2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label defaultText2;
+        private System.Windows.Forms.Button folderChooseButton;
+        private System.Windows.Forms.Label fileChosenLabel;
+        private System.Windows.Forms.Label defaultResLbl;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.CheckBox moreStatsToggle;
     }
 }
 
