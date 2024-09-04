@@ -13,11 +13,12 @@ using System.IO;
 using System.Text.RegularExpressions;
 using Microsoft.WindowsAPICodePack.Dialogs;
 
-
+//TODO: add progress bar for when first downloading ffmpeg and yt-dlp, as well as progress bars for video download/format.
 namespace WindowsFormsApp1
 {
     public partial class FFmpegotron : Form
     {
+        public CommonOpenFileDialog folderDialog = new CommonOpenFileDialog();
         public FFmpegotron()
         {
             InitializeComponent();
@@ -113,11 +114,10 @@ namespace WindowsFormsApp1
 
         public void ytChooseDownloadDirButtonClick(object sender, EventArgs e)
         {
-            CommonOpenFileDialog folderDialog = new CommonOpenFileDialog();
             folderDialog.InitialDirectory = "./";
             folderDialog.IsFolderPicker = true;
             folderDialog.Title = "Pick a folder!";
-            folderDialog.ShowDialog();
+            folderDialog.ShowDialog(); //TODO: Fix global-ity of folderDialog data.
 
         }
 

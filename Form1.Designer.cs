@@ -327,7 +327,6 @@
         private System.Windows.Forms.Label defaultResLbl;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.CheckBox moreStatsToggle;
-        //private Microsoft.WindowsAPICodePack.Dialogs.CommonOpenFileDialog folderDialog;
     }
 }
 
