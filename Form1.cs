@@ -25,7 +25,6 @@ namespace WindowsFormsApp1
             this.Text = "FFmpegotron";
             downloadDependancies();
 
-
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -66,44 +65,41 @@ namespace WindowsFormsApp1
             {
                 chosenName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
             }
+            string videoLink = videoLinkBox.Text;
             string formatChosen = ytDownloaderFormatBox.Text;
             string folderPath = folderDialog.FileName;
-            
             string vidResolution = Regex.Replace(ytVideoResBox.Text, "p", string.Empty);
-            //if (formatChosen != "" && filename.Length > 1)
+            if (formatChosen != "" && folderPath.Length > 2 && Uri.IsWellFormedUriString(videoLink, UriKind.Absolute))
             {
+                if (vidResolution.Length < 3)
+                {
+                    vidResolution = "1080";
+                }
                 if (chosenName == "")
                 {
                     chosenName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
                 }
+
                 var proc2 = new ProcessStartInfo();
                 proc2.UseShellExecute = true;
                 proc2.WorkingDirectory = "./";
                 proc2.FileName = "cmd.exe";
-                proc2.Arguments = "/c " + $@"yt-dlp -o ""{chosenName}"" --recode-video {formatChosen} -S res:{vidResolution} -P ""{folderPath}"" " ;
+                if (formatChosen != "mp3" || formatChosen != "wav")
+                {
+                    proc2.Arguments = "/c " + $@"yt-dlp -o ""{chosenName}"" ""{videoLink}"" --recode-video {formatChosen} -S res:{vidResolution} -P ""{folderPath}"" ";
+                }
+                else
+                {
+                    proc2.Arguments = "/c " + $@"yt-dlp -o ""{chosenName}"" ""{videoLink}"" --recode-video {formatChosen} -P ""{folderPath}"" ";
+                }
                 proc2.WindowStyle = ProcessWindowStyle.Hidden;
                 Process.Start(proc2);
             }
-            /*else
-            {
-                MessageBox.Show("Please fill out the required fields!", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
-        }
-
-        private void moreStatsTickChanged(object sender, EventArgs e)
-        {
-            if (moreStatsToggle.Checked == false)
-            {
-                panel2.Enabled = false;
-                panel2.Visible = false;
-            }
             else
             {
-                panel2.Enabled = true;
-                panel2.Visible = true;
+                MessageBox.Show("Please fill out the required fields or recheck your entries!", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            ytVideoResLabel.Text = folderDialog.FileName;
         }
 
         private void switchToFFmpegClick(object sender, EventArgs e)
@@ -117,7 +113,7 @@ namespace WindowsFormsApp1
             folderDialog.InitialDirectory = "./";
             folderDialog.IsFolderPicker = true;
             folderDialog.Title = "Pick a folder!";
-            folderDialog.ShowDialog(); //TODO: Fix global-ity of folderDialog data.
+            folderDialog.ShowDialog();
 
         }
 

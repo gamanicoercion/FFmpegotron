@@ -51,8 +51,6 @@
             this.switchToFFmpegButton = new System.Windows.Forms.Button();
             this.ytVideoResLabel = new System.Windows.Forms.Label();
             this.ytVideoResBox = new System.Windows.Forms.ComboBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.moreStatsToggle = new System.Windows.Forms.CheckBox();
             this.defaultText2 = new System.Windows.Forms.Label();
             this.ffmpegGoToFileButton = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -140,8 +138,6 @@
             this.panel1.Controls.Add(this.switchToFFmpegButton);
             this.panel1.Controls.Add(this.ytVideoResLabel);
             this.panel1.Controls.Add(this.ytVideoResBox);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.moreStatsToggle);
             this.panel1.Controls.Add(this.defaultText2);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
@@ -235,19 +231,6 @@
             resources.GetString("ytVideoResBox.Items6")});
             this.ytVideoResBox.Name = "ytVideoResBox";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // moreStatsToggle
-            // 
-            resources.ApplyResources(this.moreStatsToggle, "moreStatsToggle");
-            this.moreStatsToggle.Name = "moreStatsToggle";
-            this.moreStatsToggle.UseVisualStyleBackColor = true;
-            this.moreStatsToggle.CheckedChanged += new System.EventHandler(this.moreStatsTickChanged);
-            // 
             // defaultText2
             // 
             resources.ApplyResources(this.defaultText2, "defaultText2");
@@ -325,8 +308,6 @@
         private System.Windows.Forms.Button folderChooseButton;
         private System.Windows.Forms.Label fileChosenLabel;
         private System.Windows.Forms.Label defaultResLbl;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.CheckBox moreStatsToggle;
     }
 }
 
