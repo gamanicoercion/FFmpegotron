@@ -13,11 +13,13 @@ using System.IO;
 using System.Text.RegularExpressions;
 using Microsoft.WindowsAPICodePack.Dialogs;
 
-//TODO: add progress bar for when first downloading ffmpeg and yt-dlp, as well as progress bars for video download/format.
 namespace WindowsFormsApp1
 {
     public partial class FFmpegotron : Form
     {
+        private Process ytDlpProcess;
+        private Process ffmpegProcess;
+
         public CommonOpenFileDialog folderDialog = new CommonOpenFileDialog();
         public FFmpegotron()
         {
@@ -45,7 +47,6 @@ namespace WindowsFormsApp1
         {
 
             string format = ytDownloaderFormatBox.GetItemText(ytDownloaderFormatBox.SelectedItem);
-            var formats = new List<string> { "mkv", "mov", "mp4", "avi" };
             if (format != "mp3" && format != "wav")
             {
                 ytVideoResBox.Enabled = true;
@@ -65,12 +66,34 @@ namespace WindowsFormsApp1
             {
                 chosenName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
             }
+
             string videoLink = videoLinkBox.Text;
             string formatChosen = ytDownloaderFormatBox.Text;
-            string folderPath = folderDialog.FileName;
             string vidResolution = Regex.Replace(ytVideoResBox.Text, "p", string.Empty);
-            if (formatChosen != "" && folderPath.Length > 2 && Uri.IsWellFormedUriString(videoLink, UriKind.Absolute))
+            bool isDialogDone = false;
+            try
             {
+                var test = folderDialog.FileName;
+                isDialogDone = true;
+            }
+            catch (System.InvalidOperationException)
+            {
+                isDialogDone = false;
+                MessageBox.Show("Please fill all the required fields!", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            if (formatChosen != "" && Uri.IsWellFormedUriString(videoLink, UriKind.Absolute) && isDialogDone == true)
+            {
+                string folderPath = folderDialog.FileName;
+                string chosenNameValidation = fileNameBox2.Text;
+                string fileNameValidation = folderPath + chosenNameValidation;
+                string fileNameTest = folderDialog.FileName +@"\" + chosenName + "." + formatChosen;
+                if (File.Exists(fileNameTest))
+                {
+                    MessageBox.Show("File with the same name exists in chosen folder, rename and try again.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 if (vidResolution.Length < 3)
                 {
                     vidResolution = "1080";
@@ -80,26 +103,47 @@ namespace WindowsFormsApp1
                     chosenName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
                 }
 
-                var proc2 = new ProcessStartInfo();
-                proc2.UseShellExecute = true;
-                proc2.WorkingDirectory = "./";
-                proc2.FileName = "cmd.exe";
+                ytDlpProcess = new Process();
+
+                ytDlpProcess.StartInfo.UseShellExecute = true;
+                ytDlpProcess.StartInfo.WorkingDirectory = "./";
+                ytDlpProcess.StartInfo.FileName = "cmd.exe";
                 if (formatChosen != "mp3" || formatChosen != "wav")
                 {
-                    proc2.Arguments = "/c " + $@"yt-dlp -o ""{chosenName}"" ""{videoLink}"" --recode-video {formatChosen} -S res:{vidResolution} -P ""{folderPath}"" ";
+                    ytDlpProcess.StartInfo.Arguments = "/c " + $@"yt-dlp -o ""{chosenName}"" ""{videoLink}"" --recode-video {formatChosen} -S res:{vidResolution} -P ""{folderPath}"" ";
                 }
                 else
                 {
-                    proc2.Arguments = "/c " + $@"yt-dlp -o ""{chosenName}"" ""{videoLink}"" --recode-video {formatChosen} -P ""{folderPath}"" ";
+                    ytDlpProcess.StartInfo.Arguments = "/c " + $@"yt-dlp -o ""{chosenName}"" ""{videoLink}"" --recode-video {formatChosen} -P ""{folderPath}"" ";
                 }
-                proc2.WindowStyle = ProcessWindowStyle.Hidden;
-                Process.Start(proc2);
+                ytDlpProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+
+                ytDlpProcess.EnableRaisingEvents = true;
+                ytDlpProcess.Exited += new EventHandler(ytDlpExited);
+                ytDlpProcess.Start();
+                ytDlpProgressBar.Value = 50;
             }
             else
             {
                 MessageBox.Show("Please fill out the required fields or recheck your entries!", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void ytDlpExited(object sender, EventArgs e)
+        {
+            if (ytDlpProcess.ExitCode == 0)
+            {
+                // success
+                ytDlpProgressBar.Value = 100;
+            }
+            else
+            {
+                // failure
+                ytDlpProgressBar.Value = 0;
+                MessageBox.Show("Error when downloading video.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            ytDlpProcess.Dispose();
         }
 
         private void switchToFFmpegClick(object sender, EventArgs e)
@@ -114,6 +158,14 @@ namespace WindowsFormsApp1
             folderDialog.IsFolderPicker = true;
             folderDialog.Title = "Pick a folder!";
             folderDialog.ShowDialog();
+            try
+            {
+                if (folderDialog.FileName.Length > 2)
+                {
+                    goToFolderButtonYT.Enabled = true;
+                }
+            }
+            catch (System.InvalidOperationException) { }
 
         }
 
@@ -138,13 +190,17 @@ namespace WindowsFormsApp1
                     {
                         chosenName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
                     }
-                    var proc1 = new ProcessStartInfo();
-                    proc1.UseShellExecute = true;
-                    proc1.WorkingDirectory = "./";
-                    proc1.FileName = "cmd.exe";
-                    proc1.Arguments = "/c " + $@"ffmpeg -i ""{path}\{openFileDialog1.SafeFileName}"" {path}/""{chosenName}"".{chosenFormat}";
-                    proc1.WindowStyle = ProcessWindowStyle.Hidden;
-                    Process.Start(proc1);
+                    ffmpegProcess = new Process();
+                    ffmpegProcess.StartInfo.UseShellExecute = true;
+                    ffmpegProcess.StartInfo.WorkingDirectory = "./";
+                    ffmpegProcess.StartInfo.FileName = "cmd.exe";
+
+                    ffmpegProcess.StartInfo.Arguments = "/c " + $@"ffmpeg -i ""{path}\{openFileDialog1.SafeFileName}"" {path}/""{chosenName}"".{chosenFormat}";
+                    ffmpegProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                    ffmpegProcess.EnableRaisingEvents = true;
+                    ffmpegProcess.Exited += new EventHandler(ffmpegExited);
+                    ffmpegProcess.Start();
+                    ytDlpProgressBar.Value = 50;
                 }
                 else
                 {
@@ -152,6 +208,21 @@ namespace WindowsFormsApp1
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+        private void ffmpegExited(object sender, EventArgs e)
+        {
+            if (ffmpegProcess.ExitCode == 0)
+            {
+                // success
+                ffmpegProgressBar.Value = 100;
+            }
+            else
+            {
+                // failure
+                ffmpegProgressBar.Value = 0;
+                MessageBox.Show("Error when converting media.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            ffmpegProcess.Dispose();
         }
 
         private void goToFileClick(object sender, EventArgs e)
@@ -166,11 +237,9 @@ namespace WindowsFormsApp1
             openFileDialog1.InitialDirectory = "";
             openFileDialog1.Title = "Choose a media file!";
             openFileDialog1.ShowDialog();
-            string filename = string.Empty;
-            string file_path = string.Empty;
             if (openFileDialog1.FileName != "openFileDialog1")
             {
-                file_path = $"File: {openFileDialog1.FileName}";
+                string file_path = $"File: {openFileDialog1.FileName}";
                 ffmpegGoToFileButton.Enabled = true;
                 fileChosenLabel.Text = file_path;
                 fileChosenLabel.Visible = true;
@@ -186,6 +255,11 @@ namespace WindowsFormsApp1
         {
             panel1.Visible = true;
             panel1.Enabled = true;
+        }
+
+        private void goToFolderClick(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe ", folderDialog.FileName);
         }
     }
 }

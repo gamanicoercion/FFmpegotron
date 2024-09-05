@@ -52,9 +52,12 @@
             this.ytVideoResLabel = new System.Windows.Forms.Label();
             this.ytVideoResBox = new System.Windows.Forms.ComboBox();
             this.defaultText2 = new System.Windows.Forms.Label();
+            this.goToFolderButtonYT = new System.Windows.Forms.Button();
+            this.ytDlpProgressBar = new System.Windows.Forms.ProgressBar();
             this.ffmpegGoToFileButton = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.fileChosenLabel = new System.Windows.Forms.Label();
+            this.ffmpegProgressBar = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -139,6 +142,8 @@
             this.panel1.Controls.Add(this.ytVideoResLabel);
             this.panel1.Controls.Add(this.ytVideoResBox);
             this.panel1.Controls.Add(this.defaultText2);
+            this.panel1.Controls.Add(this.goToFolderButtonYT);
+            this.panel1.Controls.Add(this.ytDlpProgressBar);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
@@ -236,6 +241,18 @@
             resources.ApplyResources(this.defaultText2, "defaultText2");
             this.defaultText2.Name = "defaultText2";
             // 
+            // goToFolderButtonYT
+            // 
+            resources.ApplyResources(this.goToFolderButtonYT, "goToFolderButtonYT");
+            this.goToFolderButtonYT.Name = "goToFolderButtonYT";
+            this.goToFolderButtonYT.UseVisualStyleBackColor = true;
+            this.goToFolderButtonYT.Click += new System.EventHandler(this.goToFolderClick);
+            // 
+            // ytDlpProgressBar
+            // 
+            resources.ApplyResources(this.ytDlpProgressBar, "ytDlpProgressBar");
+            this.ytDlpProgressBar.Name = "ytDlpProgressBar";
+            // 
             // ffmpegGoToFileButton
             // 
             resources.ApplyResources(this.ffmpegGoToFileButton, "ffmpegGoToFileButton");
@@ -253,11 +270,17 @@
             resources.ApplyResources(this.fileChosenLabel, "fileChosenLabel");
             this.fileChosenLabel.Name = "fileChosenLabel";
             // 
+            // ffmpegProgressBar
+            // 
+            resources.ApplyResources(this.ffmpegProgressBar, "ffmpegProgressBar");
+            this.ffmpegProgressBar.Name = "ffmpegProgressBar";
+            // 
             // FFmpegotron
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.ffmpegProgressBar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.switchToYoutubeButton);
@@ -308,6 +331,9 @@
         private System.Windows.Forms.Button folderChooseButton;
         private System.Windows.Forms.Label fileChosenLabel;
         private System.Windows.Forms.Label defaultResLbl;
+        private System.Windows.Forms.Button goToFolderButtonYT;
+        private System.Windows.Forms.ProgressBar ytDlpProgressBar;
+        private System.Windows.Forms.ProgressBar ffmpegProgressBar;
     }
 }
 

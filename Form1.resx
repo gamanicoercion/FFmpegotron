@@ -145,7 +145,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ffmpegChooseFileButton.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>31, 12</value>
@@ -184,7 +184,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ffmpegMediaFormatBox.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="convetFileButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 24pt</value>
@@ -214,7 +214,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;convetFileButton.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="yourFileWillBeInLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -244,7 +244,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;yourFileWillBeInLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="ffmpegTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>555, 62</value>
@@ -265,7 +265,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ffmpegTextBox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="ffmpegChooseFormatLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -292,7 +292,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ffmpegChooseFormatLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="defaultText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -319,7 +319,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;defaultText.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="switchToYoutubeButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
@@ -346,7 +346,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;switchToYoutubeButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="defaultResLbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -723,6 +723,54 @@
   <data name="&gt;&gt;defaultText2.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="goToFolderButtonYT.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="goToFolderButtonYT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 335</value>
+  </data>
+  <data name="goToFolderButtonYT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 37</value>
+  </data>
+  <data name="goToFolderButtonYT.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="goToFolderButtonYT.Text" xml:space="preserve">
+    <value>Go to folder:</value>
+  </data>
+  <data name="&gt;&gt;goToFolderButtonYT.Name" xml:space="preserve">
+    <value>goToFolderButtonYT</value>
+  </data>
+  <data name="&gt;&gt;goToFolderButtonYT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;goToFolderButtonYT.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;goToFolderButtonYT.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ytDlpProgressBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 210</value>
+  </data>
+  <data name="ytDlpProgressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 23</value>
+  </data>
+  <data name="ytDlpProgressBar.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;ytDlpProgressBar.Name" xml:space="preserve">
+    <value>ytDlpProgressBar</value>
+  </data>
+  <data name="&gt;&gt;ytDlpProgressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ytDlpProgressBar.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;ytDlpProgressBar.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
   <data name="panel1.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -748,7 +796,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="ffmpegGoToFileButton.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -778,7 +826,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ffmpegGoToFileButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -805,7 +853,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="fileChosenLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -835,7 +883,31 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;fileChosenLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
+  </data>
+  <data name="ffmpegProgressBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ffmpegProgressBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 210</value>
+  </data>
+  <data name="ffmpegProgressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 23</value>
+  </data>
+  <data name="ffmpegProgressBar.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;ffmpegProgressBar.Name" xml:space="preserve">
+    <value>ffmpegProgressBar</value>
+  </data>
+  <data name="&gt;&gt;ffmpegProgressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ffmpegProgressBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ffmpegProgressBar.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
